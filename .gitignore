@@ -1,0 +1,11 @@
+# Archivos temporales y de usuario
+*.xlsx
+*.xls
+*.tmp
+~$*
+
+# Salidas y compilados
+*.parquet
+
+# Carpeta de resultados
+/output/
