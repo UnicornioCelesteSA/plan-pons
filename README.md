@@ -6,14 +6,15 @@ Este proyecto tiene como objetivo unir y auditar la información proveniente del
 
 ## 🏗️ Estructura
 
+```
 PLAN PONS/
-├── data/ # Archivos originales limpios
-├── output/ # Resultados del merge y análisis
-├── src/ # Scripts de procesamiento
-├── main.py # Script principal del pipeline
+├── data/                    # Archivos originales limpios
+├── output/                  # Resultados del merge y análisis
+├── src/                     # Scripts de procesamiento
+├── main.py                  # Script principal del pipeline
 ├── .gitignore
 └── README_2_estado_registro.md
-
+```
 
 ---
 
@@ -49,6 +50,9 @@ flowchart TD
   subgraph "5. Exportación"
     E --> F[Guardar Parquet y Excel]
   end
+```
+
+---
 
 ## 📌 Estado de los registros
 
@@ -59,8 +63,6 @@ Ver [README_2_estado_registro.md](./README_2_estado_registro.md) para conocer el
 ## 👤 Autor
 
 Juan Miguel Gigante  
-SAI 
+SAI  
 📧 juangigante@saimedicine.com
-
-::contentReference[oaicite:0]{index=0}
 
