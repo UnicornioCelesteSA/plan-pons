@@ -30,6 +30,26 @@ PLAN PONS/
 
 ---
 
+## 🗺️ Diagrama de flujo del pipeline
+
+```mermaid
+flowchart TD
+  subgraph "1. Lectura de datos"
+    A[Leer cirugías] --> B[Leer desmontajes]
+  end
+  subgraph "2. Limpieza y Normalización"
+    B --> C[Normalizar y limpiar]
+  end
+  subgraph "3. Unión de Datasets"
+    C --> D[Merge por codigo_cirugia]
+  end
+  subgraph "4. Cálculo de Auditoría"
+    D --> E[Calcular estado_registro]
+  end
+  subgraph "5. Exportación"
+    E --> F[Guardar Parquet y Excel]
+  end
+
 ## 📌 Estado de los registros
 
 Ver [README_2_estado_registro.md](./README_2_estado_registro.md) para conocer el significado de cada valor en `estado_registro`.
@@ -41,3 +61,6 @@ Ver [README_2_estado_registro.md](./README_2_estado_registro.md) para conocer el
 Juan Miguel Gigante  
 SAI 
 📧 juangigante@saimedicine.com
+
+::contentReference[oaicite:0]{index=0}
+
